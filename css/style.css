@@ -70,6 +70,16 @@ html, body {
         .bg-theme {
             background-color: var(--color-theme);
         }
+            .text-theme {
+                color: var(--color-theme);
+            }
+
+.instock {
+    color: var(--color-product-instock);
+}
+.outofstock {
+    color: var(--color-product-outofstock);
+}
 
 .section-title {
     padding: 3rem 0;
@@ -253,6 +263,7 @@ html, body {
             justify-content: space-between;
             align-items: center;
             padding: 0.7rem 1rem;
+            transition: 0.15s ease-in-out;
         }
             .main-menu nav .browser-categories button:hover {
                 background-color: var(--color-theme-dark);
@@ -305,6 +316,7 @@ html, body {
     /* webshop-info */
     .webshop-info {
         padding: 4rem 0;
+
     }
 
     .webshop-info .container {
@@ -314,6 +326,7 @@ html, body {
     }
 
     .webshop-info .info-box {
+        transition: all 0.2s;
         background-color: var(--color-theme-light);
         padding: 1rem;
         display: flex;
@@ -328,6 +341,8 @@ html, body {
     }
         .webshop-info .info-box img {
             margin-right: 1.5rem;
+            transition: all 0.3s;
+            filter: brightness(100%);
         }
             .webshop-info .info-box:hover img {
                 filter: brightness(1000%);
@@ -336,11 +351,155 @@ html, body {
             color: var(--color-theme);
             font-size: 1rem;
             font-weight: var(--font-weight-medium);
+            transition: all 0.3s;
         }
         .webshop-info .info-box:hover h1 {
             color: var(--color-white);
 
         }
+
+        /* My try  */
+
+        .info-section {
+            background-color: var(--color-gray-1);
+        }
+            .info-section .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 2.4rem;
+                padding-bottom: 2.4rem;
+                margin-top: 6rem;
+                height: 380px;
+            }
+
+            .info-section .container .info-discount {
+                text-align: center;
+                padding-top: 6rem;
+                height: 380px;
+                width: 255px;
+                background-color: var(--color-theme);
+                
+            }
+        
+            .info-section .info-discount {
+                font-size: 1rem;
+                font-family: var(--font-play);
+                color: var(--color-white);
+            }
+        
+                .info-section .info-discount h1 {
+                    font-weight: var(--font-weight-bold);
+                    color: var(--color-white)
+
+                }
+                .info-section .info-discount p {
+                    margin: 1rem ;
+                    color: var(--color-white);
+                }
+
+.info-section .container .info-learn {
+    margin-right: -27%;
+}
+    .info-section .container .info-learn p {
+        height: 100px;
+        width: 520px;
+    }
+
+
+
+
+
+
+
+.sale {
+    background-color: var(--color-theme-dark)
+}
+    .sale .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2.4rem;
+        padding-bottom: 2.4rem;
+        margin-top: 6rem;
+        height: 380px;
+    }
+
+    .sale .container .flash-sale {
+        text-align: center;
+        padding-top: 3rem;
+        height: 255px;
+        width: 245px;
+        background-color: var(--color-theme);
+        font-family: var(--font-play);
+        color: var(--color-white);
+        margin-bottom: 9.5%;
+    }
+        .sale .container .flash-sale h1 {
+            font-size: 3rem;
+            font-weight: var(--font-weight-bold);
+            color: var(--color-white)
+            
+        }
+        .sale .container .flash-sale p {
+            margin: 1rem ;
+            color: var(--color-white);
+            font-size: 1.3rem;
+        }
+
+.sale .container .sale-timer {
+
+}
+    .sale .container .sale-timer .cirkel-timer-days {
+        background-color: var(--color-white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-white);
+        height: 109px;
+        width: 109px;
+        border-radius: 50%;
+        border: dotted var(--color-theme);
+        
+    }
+
+        .sale .container .sale-timer .cirkel-timer-hours {
+            background-color: var(--color-white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--color-white);
+            height: 109px;
+            width: 109px;
+            border-radius: 50%;
+            border: dotted var(--color-theme);
+        }
+            .sale .container .sale-timer .cirkel-timer-minutes {
+                background-color: var(--color-white);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--color-white);
+                height: 109px;
+                width: 109px;
+                border-radius: 50%;
+                border: dotted var(--color-theme);
+            }
+                .sale .container .sale-timer .cirkel-timer-seconds {
+                    background-color: var(--color-white);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: var(--color-white);
+                    height: 109px;
+                    width: 109px;
+                    border-radius: 50%;
+                    border: dotted var(--color-theme);
+                }
+
+
+
+
 
 /* shop-by-category */
     .shop-by-category .grid {
@@ -360,6 +519,7 @@ html, body {
         overflow: hidden;
     }
         .shop-by-category .category-box .category-box-title {
+        transition: all 0.2s ease-in-out;
         position: absolute;
         left: 0;
         bottom: 0;
@@ -411,6 +571,107 @@ html, body {
             grid-row: 3 / -1;
         }
 
+.new-arrivals {
+    padding-top: 6rem;
+}
+
+    .new-arrivals .card {
+        position: relative;
+        height: 380px;
+        width: 320px;
+        overflow: hidden;
+    }
+
+    .new-arrivals .card img {
+        height: 400px;
+    }
+
+    .new-arrivals .card .card-body {
+        position: absolute;
+        padding: 1rem;
+        bottom: 0;
+        height: 14%;
+        width: 100%;
+        color: var(--color-white);
+        z-index: 1;
+        transition: 0.3s ease-in-out;
+        font-size: 1rem;
+    }
+        .new-arrivals .card:hover .card-body {
+            height: 40%;
+        }
+
+            .new-arrivals .card .card-body h1 {
+                font-size: 1.125rem;
+                margin-bottom: 1rem;
+                transition: 0.3s ease-in-out;
+                font-weight: var(--font-weight-regular);
+            }
+                .new-arrivals .card:hover .card-body h1 {
+                    margin-bottom: 0;
+                }
+    .new-arrivals .card .card-body button {
+        background-color: transparent;
+        color: var(--color-white);
+        border: 1px solid var(--color-white);
+        font-size: 0.875rem;
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+        margin: 0.5rem 0;
+    }
+    .new-arrivals .card .card-body .card-old-price {
+        text-decoration: line-through;
+        margin: 0;
+    }
+        .new-arrivals .card .card-body .card-discount-price {
+            color: var(--color-theme);
+            font-weight: var(--font-weight-medium);
+            font-size: 1.5em;
+            margin: 0;
+        }
+        
+
+    .new-arrivals .card .card-background {
+        position: absolute;
+        bottom: 0;
+        height: 15%;
+        width: 100%;
+        background-color: var(--color-theme-dark);
+        opacity: 0.90;
+        transition: height 0.3s ease-in-out;
+    }
+        .new-arrivals .card:hover .card-background {
+            height: 100%;
+        }
+
+
+        .new-arrivals .card .card-menu {
+            position: absolute;
+            width: 50px;
+            z-index: 1;
+            top: 121%;
+            right: 1rem;
+            list-style: none;
+            padding: 0.8rem;
+            font-size: 1.25rem;
+            border-radius: var(--border-radius-medium);
+            background-color: var(--color-white);
+            transition: top 0.3s ease-in-out;
+        }
+            .new-arrivals .card:hover .card-menu {
+                top: 20px;
+            }
+                .new-arrivals .card .card-menu li {
+                    margin-top: 0.3rem;
+                    margin-bottom: 0.3rem;
+                    font-size: 1.0em;
+                }
+                    .new-arrivals .card .card-menu li a {
+                        color: var(--color-gray-0);
+                    }
+                        .new-arrivals .card .card-menu li a:hover {
+                            color: var(--color-theme);
+                        }
 
 
 @media (min-width: 578px) {
